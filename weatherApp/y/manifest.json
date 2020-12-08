@@ -1,0 +1,36 @@
+{
+    "name": "Splash it Weather App",
+    "short_name": "Weather App",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white",
+    "orientation": "portrait-primary",
+    "icons":[
+        {
+            "src":"/icons/unknown72.png",
+            "type": "image/png",
+            "sizes":"72x72"
+        },
+        {
+            "src":"/icons/unknown.png",
+            "type": "image/png",
+            "sizes":"128x128"
+        },
+        {
+            "src":"/icons/unknown144.png",
+            "type": "image/png",
+            "sizes":"144x144"
+        },
+        {
+            "src":"/icons/unknown192.png",
+            "type": "image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src":"/icons/unknown512.png",
+            "type": "image/png",
+            "sizes":"512x512"
+        }
+    ]
+}

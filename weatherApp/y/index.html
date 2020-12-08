@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+
+        <link rel="apple-touch-icon" href="./icons/unknown.png">
+        <meta name="apple-mobile-web-status-bar" content="#aa7700"> 
+        <meta name="theme-color" content="white">
+    </head>
+    <body>
+        <div class="splash">
+            <h1 class="fade-in"><span>Splash It</span> Weather App</h1>
+        </div>
+        <div class="app-wrap">
+            <header>
+                <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city...">
+            </header>
+            <main>
+                <section class="location">
+                    <div class="city">Tokyo, JP </div>
+                    <div class="date">Thursday 10th September 2020</div>
+                </section> 
+                <div class="current">
+                    <div class="temp">29<span>°C</span></div>
+                    <div class="weather">Clouds</div>
+                    <div class="hi-low">28°C / 29°C</div>
+                </div>
+            </main>
+        </div> 
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCYr2LzK6DdJCbVa9hpwxxkKqWPPdN3Hkw",
+    authDomain: "weather-app-543f3.firebaseapp.com",
+    databaseURL: "https://weather-app-543f3.firebaseio.com",
+    projectId: "weather-app-543f3",
+    storageBucket: "weather-app-543f3.appspot.com",
+    messagingSenderId: "1003856149130",
+    appId: "1:1003856149130:web:90e7bbbec918e9c0a08b73",
+    measurementId: "G-MKQMLENREL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
